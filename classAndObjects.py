@@ -68,20 +68,47 @@ t3 = Test
 """
 def __init(self):
     
+class Test:
+    def __init__(self, a, b): ## Its a consructor
+        self.a = a
+        self.b = b
+        ## a and b are instnce object object variable
+
+
+t1 = Test(5,7)
+t2 = Test(9,8)
+
+print(t1.a , t1.b)
+print(t2.a , t2.b)
+"""
+
+
+## Methods
+"""
+- Instance Method
+- Static Method
+- Class Method
 """
 
 class Test:
-    def __init__(self):
-        print("This in object")
-        # self.__fun()
+    x = 10
+    def __init__(self, a, b): ## Its a consructor
+        self.a = a
+        self.b = b
+        ## a and b are instnce object object variable
     
-    def __fun(self):
-        print("this is funtion")
+    def fun(self):
+        print("this is instance method")
 
     @staticmethod
     def info():
-        print("this is info")
+        print("this is static method")
 
+    @classmethod
+    def fun1(cls):
+        print("this is class method", cls.x)
+        pass
 
-t1 = Test()
-t1.info()
+h = Test(3,5)
+
+Test.fun1()

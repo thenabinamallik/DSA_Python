@@ -41,7 +41,7 @@ print(e2.getEmpid(), e2.getName(), e2.getSalary())
 <br>
 
 # 2 - Singly Linked List <hr>
-### Create a Singly Linked List and perform insert_at_start(), insert_at_last(), insert_after() and Print_list() function
+### Create a Singly Linked List and perform insert_at_start(), insert_at_last(), insert_after() and Print_list() function along with deletes
 ```python
 
 class Node:
